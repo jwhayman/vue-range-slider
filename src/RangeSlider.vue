@@ -126,7 +126,7 @@ export default {
     },
 
     emitInput(value) {
-      this.$emit('input', value)
+      this.$emit('input', {name: this.name, value: value})
     },
 
     emitChange(value) {
